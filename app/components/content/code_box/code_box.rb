@@ -26,7 +26,7 @@ module Components
       def view_template
         table(style: wrapper_styles, cellpadding: "0", cellspacing: "0", role: "none") do
           tr do
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
             td(style: "width: 600px; max-width: 100%;") do
               table(style: "width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
                 tr do
@@ -36,7 +36,7 @@ module Components
                 end
               end
             end
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
           end
         end
       end
@@ -48,7 +48,7 @@ module Components
       end
 
       def render_box_content
-        unsafe_raw "<!--[if mso]>\n<v:roundrect arcsize=\"0.5\" style=\"width:100%; height:auto\" fillcolor=\"#{@bg_color}\" stroke=\"true\" strokecolor=\"#{@border_color}\" strokeweight=\"2px\" xmlns:v=\"urn:schemas-microsoft-com:vml\">\n<![endif]-->"
+        raw "<!--[if mso]>\n<v:roundrect arcsize=\"0.5\" style=\"width:100%; height:auto\" fillcolor=\"#{@bg_color}\" stroke=\"true\" strokecolor=\"#{@border_color}\" strokeweight=\"2px\" xmlns:v=\"urn:schemas-microsoft-com:vml\">\n<![endif]-->".html_safe
 
         table(style: box_table_styles, cellpadding: "0", cellspacing: "0", role: "none") do
           if @label
@@ -68,7 +68,7 @@ module Components
           end
         end
 
-        unsafe_raw "<!--[if mso]>\n</v:roundrect>\n<![endif]-->"
+        raw "<!--[if mso]>\n</v:roundrect>\n<![endif]-->".html_safe
       end
 
       def box_table_styles

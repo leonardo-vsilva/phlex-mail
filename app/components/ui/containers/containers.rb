@@ -30,7 +30,7 @@ module Components
       def render_flush(&block)
         table(style: "background-color: #{@bg_color}; width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
           tr do
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
             td(style: "background-color: #{@content_bg_color}; width: #{@width}px; max-width: 100%;") do
               table(style: "width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
                 tr do
@@ -38,31 +38,29 @@ module Components
                     if block_given?
                       yield
                     elsif @content
-                      unsafe_raw @content
+                      raw @content.to_s.html_safe
                     end
                   end
                 end
               end
             end
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
           end
         end
       end
 
       def render_with_gutters(&block)
         style do
-          unsafe_raw <<~CSS
-            @media (max-width: 599px) {
-              .sm-w-6 {
-                width: 24px !important;
-              }
+          raw(<<~CSS.html_safe)
+            @media screen and (max-width: 600px) {
+              .sm-w-6 { width: 24px !important; }
             }
           CSS
         end
 
         table(style: "background-color: #{@bg_color}; width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
           tr do
-            td(class: "sm-w-6") { unsafe_raw "&zwj;" }
+            td(class: "sm-w-6") { raw "&zwj;".html_safe }
             td(style: "background-color: #{@content_bg_color}; width: #{@width}px; max-width: 100%;") do
               table(style: "width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
                 tr do
@@ -70,13 +68,13 @@ module Components
                     if block_given?
                       yield
                     elsif @content
-                      unsafe_raw @content
+                      raw @content.to_s.html_safe
                     end
                   end
                 end
               end
             end
-            td(class: "sm-w-6") { unsafe_raw "&zwj;" }
+            td(class: "sm-w-6") { raw "&zwj;".html_safe }
           end
         end
       end

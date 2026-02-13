@@ -23,16 +23,17 @@ module Components
 
       def view_template
         style do
-          unsafe_raw <<~CSS
-            .hover-no-underline:hover {
-              text-decoration: none !important;
+          raw(<<~CSS.html_safe)
+            @media screen and (max-width: 600px) {
+              .sm-w-full { width: 100% !important; }
+              .sm-stack { display: block !important; width: 100% !important; }
             }
           CSS
         end
 
         table(style: "background-color: #{@bg_color}; width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
           tr do
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
             td(style: "background-color: #{@content_bg_color}; width: 600px; max-width: 100%; padding-bottom: 24px;") do
               table(style: "width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
                 tr do
@@ -43,7 +44,7 @@ module Components
                 end
               end
             end
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
           end
         end
       end
@@ -53,21 +54,21 @@ module Components
       def render_divider
         table(style: "background-color: #{@bg_color}; width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
           tr do
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
             td(style: "background-color: #{@content_bg_color}; width: 600px; max-width: 100%;") do
               table(role: "separator", style: "width: 100%;", cellpadding: "0", cellspacing: "0") do
                 tr do
-                  td(style: "width: 0px") { unsafe_raw "&zwj;" }
+                  td(style: "width: 0px") { raw "&zwj;".html_safe }
                   td do
                     div(style: "height: 1px; line-height: 1px; background-color: #d1d5db; margin-top: 24px; margin-bottom: 24px;") do
-                      unsafe_raw "&zwj;"
+                      raw "&zwj;".html_safe
                     end
                   end
-                  td(style: "width: 0px") { unsafe_raw "&zwj;" }
+                  td(style: "width: 0px") { raw "&zwj;".html_safe }
                 end
               end
             end
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
           end
         end
       end

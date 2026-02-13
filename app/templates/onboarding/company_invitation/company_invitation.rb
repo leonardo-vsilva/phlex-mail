@@ -83,7 +83,7 @@ module Templates
           td do
             table(style: "width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
               tr do
-                td { unsafe_raw "&zwj;" }
+                td { raw "&zwj;".html_safe }
                 td(style: "width: 600px; max-width: 100%; background-color: #ffffff;") do
                   table(style: "width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
                     tr do
@@ -116,7 +116,7 @@ module Templates
                     end
                   end
                 end
-                td { unsafe_raw "&zwj;" }
+                td { raw "&zwj;".html_safe }
               end
             end
           end

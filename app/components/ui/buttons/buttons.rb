@@ -69,7 +69,7 @@ module Components
 
       def render_button_style
         style do
-          unsafe_raw <<~CSS
+          raw(<<~CSS.html_safe)
             .hover-button-#{@variant}:hover {
               background-color: #{@hover_color} !important;
             }

@@ -22,12 +22,12 @@ module Components
 
         table(style: "background-color: #{@bg_color}; width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
           tr do
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
             td(style: "background-color: #{@content_bg_color}; width: 600px; max-width: 100%;") do
               table(style: "width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
                 tr do
                   td(style: "padding: #{@padding};") do
-                    div(role: "separator", style: "line-height: 44px") { unsafe_raw "&zwj;" }
+                    div(role: "separator", style: "line-height: 44px") { raw "&zwj;".html_safe }
                     table(style: "width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
                       tr do
                         yield if block_given?
@@ -37,7 +37,7 @@ module Components
                 end
               end
             end
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
           end
         end
       end
@@ -50,14 +50,14 @@ module Components
           if block_given?
             yield
           elsif content
-            unsafe_raw content
+            raw content.to_s.html_safe
           end
         end
       end
 
       def spacer
         td(class: "sm-w-full sm-block", style: "width: #{@gap}px; line-height: #{@gap}px") do
-          unsafe_raw "&zwj;"
+          raw "&zwj;".html_safe
         end
       end
 
@@ -65,11 +65,9 @@ module Components
 
       def render_responsive_styles
         style do
-          unsafe_raw <<~CSS
-            @media (max-width: 599px) {
-              .sm-block {
-                display: block !important;
-              }
+          raw(<<~CSS.html_safe)
+            @media screen and (max-width: 600px) {
+              .sm-stack { display: block !important; width: 100% !important; }
               .sm-w-full {
                 width: 100% !important;
               }

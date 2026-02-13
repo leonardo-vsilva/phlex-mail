@@ -17,9 +17,9 @@ module Components
           role: "none"
         ) do
           tr do
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
             td(style: "background-color: #{@content_bg_color}; width: 600px; max-width: 100%;") do
-              div(role: "separator", style: "line-height: 44px") { unsafe_raw "&zwj;" }
+              div(role: "separator", style: "line-height: 44px") { raw "&zwj;".html_safe }
 
               table(style: "width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
                 tr do
@@ -29,7 +29,7 @@ module Components
                 end
               end
             end
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
           end
         end
       end
@@ -38,7 +38,7 @@ module Components
 
       def render_styles
         style do
-          unsafe_raw <<~CSS
+          raw(<<~CSS.html_safe)
             @media (max-width: 599px) {
               .sm-block { display: block !important; }
               .sm-inline-block { display: inline-block !important; }
@@ -120,7 +120,7 @@ module Components
                       alt: ""
                     )
                   end
-                  td(style: "width: 16px;") { unsafe_raw "&zwj;" }
+                  td(style: "width: 16px;") { raw "&zwj;".html_safe }
                   td(style: "font-size: 12px; color: #6b7280;") { row[:service_name] }
                 end
               end

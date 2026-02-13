@@ -79,11 +79,11 @@ module Components
           role: "none"
         ) do
           tr do
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
             td(style: "width: 600px; max-width: 100%;") do
               render_content_table
             end
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
           end
         end
       end
@@ -108,7 +108,7 @@ module Components
       end
 
       def content_td_style
-        styles = ["background-color: #{@content_bg_color}", "padding: 24px"]
+        styles = [ "background-color: #{@content_bg_color}", "padding: 24px" ]
         styles << "text-align: left" if @variant == :logo
         styles.join("; ") + ";"
       end
@@ -157,7 +157,7 @@ module Components
                   end
 
                   # Spacer
-                  td(style: "width: 12px;") { unsafe_raw "&zwj;" }
+                  td(style: "width: 12px;") { raw "&zwj;".html_safe }
 
                   # User details
                   td do
@@ -209,9 +209,9 @@ module Components
                   @social_links.each_with_index do |link, index|
                     # Spacer before icon
                     if index == 0
-                      td(style: "width: 24px;") { unsafe_raw "&zwj;" }
+                      td(style: "width: 24px;") { raw "&zwj;".html_safe }
                     else
-                      td(style: "width: 24px;") { unsafe_raw "&zwj;" }
+                      td(style: "width: 24px;") { raw "&zwj;".html_safe }
                     end
 
                     # Social icon
@@ -235,9 +235,9 @@ module Components
 
       def render_user_avatar
         # Conditional comment for Outlook - abertura
-        unsafe_raw '<!--[if mso]>'
-        unsafe_raw '<v:roundrect arcsize="0.5" style="width:32px; height:32px" fillcolor="#f3f4f6" stroke="false" xmlns:v="urn:schemas-microsoft-com:vml">'
-        unsafe_raw '<![endif]-->'
+        raw "<!--[if mso]>".html_safe
+        raw '<v:roundrect arcsize="0.5" style="width:32px; height:32px" fillcolor="#f3f4f6" stroke="false" xmlns:v="urn:schemas-microsoft-com:vml">'.html_safe
+        raw "<![endif]-->".html_safe
 
         table(cellpadding: "0", cellspacing: "0", role: "none") do
           tr do
@@ -250,9 +250,9 @@ module Components
         end
 
         # Conditional comment for Outlook - fechamento
-        unsafe_raw '<!--[if mso]>'
-        unsafe_raw '</v:roundrect>'
-        unsafe_raw '<![endif]-->'
+        raw "<!--[if mso]>".html_safe
+        raw "</v:roundrect>".html_safe
+        raw "<![endif]-->".html_safe
       end
     end
   end

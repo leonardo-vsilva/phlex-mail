@@ -59,11 +59,11 @@ module Components
       def render_vertical_spacer
         table(style: "background-color: #{@bg_color}; width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
           tr do
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
             td(style: "background-color: #{@content_bg_color}; width: #{@width}px; max-width: 100%;") do
-              div(role: "separator", style: "line-height: #{@height}px") { unsafe_raw "&zwj;" }
+              div(role: "separator", style: "line-height: #{@height}px") { raw "&zwj;".html_safe }
             end
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
           end
         end
       end
@@ -71,21 +71,21 @@ module Components
       def render_line_divider
         table(style: "background-color: #{@bg_color}; width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
           tr do
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
             td(style: "background-color: #{@content_bg_color}; width: #{@width}px; max-width: 100%;") do
               table(role: "separator", style: "width: 100%;", cellpadding: "0", cellspacing: "0") do
                 tr do
-                  td(style: "width: 24px") { unsafe_raw "&zwj;" }
+                  td(style: "width: 24px") { raw "&zwj;".html_safe }
                   td do
                     div(style: "height: 1px; line-height: 1px; background-color: #{@divider_color}; margin-top: #{@margin_top}px; margin-bottom: #{@margin_bottom}px;") do
-                      unsafe_raw "&zwj;"
+                      raw "&zwj;".html_safe
                     end
                   end
-                  td(style: "width: 24px") { unsafe_raw "&zwj;" }
+                  td(style: "width: 24px") { raw "&zwj;".html_safe }
                 end
               end
             end
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
           end
         end
       end
@@ -93,7 +93,7 @@ module Components
       def render_title_divider
         table(role: "separator", style: "background-color: #{@bg_color}; width: 100%;", cellpadding: "0", cellspacing: "0") do
           tr do
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
             td(style: "background-color: #{@content_bg_color}; width: #{@width}px; max-width: 100%;") do
               table(style: "width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
                 tr do
@@ -102,7 +102,7 @@ module Components
                       tr do
                         td do
                           div(style: "margin: 0 12px 0 0; height: 1px; background-color: #{@divider_color}; line-height: 1px;") do
-                            unsafe_raw "&zwj;"
+                            raw "&zwj;".html_safe
                           end
                         end
                         td(style: "width: 96px; font-size: 16px; line-height: 24px; font-weight: 500; color: #{@title_color};") do
@@ -110,7 +110,7 @@ module Components
                         end
                         td do
                           div(style: "margin: 0 0 0 12px; height: 1px; background-color: #{@divider_color}; line-height: 1px;") do
-                            unsafe_raw "&zwj;"
+                            raw "&zwj;".html_safe
                           end
                         end
                       end
@@ -119,14 +119,14 @@ module Components
                 end
               end
             end
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
           end
         end
       end
 
       def render_icon_button_divider
         style do
-          unsafe_raw <<~CSS
+          raw(<<~CSS.html_safe)
             .hover-bg-indigo-700:hover {
               background-color: #{@button_hover_color} !important;
             }
@@ -135,7 +135,7 @@ module Components
 
         table(role: "separator", style: "background-color: #{@bg_color}; width: 100%;", cellpadding: "0", cellspacing: "0") do
           tr do
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
             td(style: "background-color: #{@content_bg_color}; width: #{@width}px; max-width: 100%;") do
               table(style: "width: 100%;", cellpadding: "0", cellspacing: "0", role: "none") do
                 tr do
@@ -147,7 +147,7 @@ module Components
                         end
                         td do
                           div(style: "margin: 0 12px; height: 1px; background-color: #{@divider_color}; line-height: 1px;") do
-                            unsafe_raw "&zwj;"
+                            raw "&zwj;".html_safe
                           end
                         end
                         td(style: "width: 96px; font-size: 16px; line-height: 24px; font-weight: 500; color: #{@title_color};") do
@@ -169,8 +169,18 @@ module Components
                 end
               end
             end
-            td { unsafe_raw "&zwj;" }
+            td { raw "&zwj;".html_safe }
           end
+        end
+        style do
+          raw(<<~CSS).html_safe
+            @media screen and (max-width: 600px) {
+              .sm-h-#{@height} {
+                height: #{@mobile_height}px !important;
+                line-height: #{@mobile_height}px !important;
+              }
+            }
+          CSS
         end
       end
     end
