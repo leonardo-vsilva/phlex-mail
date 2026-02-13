@@ -15932,3 +15932,178 @@ Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached
 Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PhlexMail'*/[0m
+Started GET "/" for 127.0.0.1 at 2026-02-12 22:12:24 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PhlexMail'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/railties-8.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/railties-8.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-12 22:12:31 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/railties-8.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/railties-8.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-12 22:12:32 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/railties-8.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/railties-8.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-12 22:12:32 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/railties-8.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/railties-8.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-12 22:12:32 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/railties-8.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/railties-8.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2026-02-12 22:13:32 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PhlexMail'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/railties-8.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/railties-8.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lookbook" for 127.0.0.1 at 2026-02-12 22:13:36 -0300
+Processing by Lookbook::ApplicationController#index as HTML
+  Rendering layout /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/application.html.erb
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/index.html.erb within layouts/lookbook/application
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/partials/_blank_slate.html.erb (Duration: 31.8ms | GC: 0.0ms)
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/index.html.erb within layouts/lookbook/application (Duration: 33.9ms | GC: 0.0ms)
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/partials/_user_styles.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/skeleton.html.erb
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/skeleton.html.erb (Duration: 2.8ms | GC: 0.0ms)
+  Rendered layout /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/application.html.erb (Duration: 81.6ms | GC: 8.0ms)
+Completed 200 OK in 89ms (Views: 84.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 8.0ms)
+
+
+Started GET "/lookbook-assets/css/themes/indigo.css?v=2.3.14" for 127.0.0.1 at 2026-02-12 22:13:37 -0300
+Started GET "/lookbook-assets/css/lookbook.css?v=2.3.14" for 127.0.0.1 at 2026-02-12 22:13:37 -0300
+Started GET "/lookbook-assets/js/index.js?v=2.3.14" for 127.0.0.1 at 2026-02-12 22:13:37 -0300
+Started GET "/lookbook-assets/js/lookbook.js?v=2.3.14" for 127.0.0.1 at 2026-02-12 22:13:37 -0300
+Started GET "/lookbook-assets/img/lucide-sprite.svg" for 127.0.0.1 at 2026-02-12 22:13:37 -0300
+Started GET "/lookbook-assets/Inter-italic.var.69eb0fe1.woff2" for 127.0.0.1 at 2026-02-12 22:13:37 -0300
+Started GET "/lookbook-assets/Inter-roman.var.b695afbe.woff2" for 127.0.0.1 at 2026-02-12 22:13:37 -0300
+Started GET "/lookbook/inspect/onboarding/company_invitation" for 127.0.0.1 at 2026-02-12 22:13:38 -0300
+Processing by Lookbook::InspectorController#show as */*
+  Parameters: {"path"=>"onboarding/company_invitation"}
+Processing by ViewComponentsController#render_scenario_to_string as */*
+  Parameters: {"path"=>"onboarding/company_invitation"}
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/view_component-4.3.0/app/views/view_components/preview.html.erb
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/view_component-4.3.0/app/views/view_components/preview.html.erb (Duration: 3.3ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+rescue_from handled ActionView::Template::Error (undefined method `unsafe_raw' for #<Components::Layout::Header:0x000000010c428df0 @variant=:logo, @logo_url="https://bucket.mailersendapp.com/0r83ql3eyx4zw1jm/0p7kx4xem8g9yjre/images/9e767506-c199-4ad6-8b4a-c49a3f3ae02f.png", @logo_alt="Linkana", @logo_width=120, @logo_link="https://app.linkana.com", @user_initials=nil, @user_name=nil, @user_email=nil, @social_links=[], @bg_color="#ffffff", @content_bg_color="#ffffff", @_state=#<Phlex::SGML::State:0x000000010d0c4d48 @buffer="", @capturing=false, @user_context={:rails_view_context=>#<ActionView::Base:0x00000000010040>, :capture_context=>#<ActionView::Base:0x00000000010040>}, @fragments=nil, @fragment_depth=0, @cache_stack=[], @halt_signal=nil, @output_buffer="">>) - /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/phlex-rails-2.4.0/lib/phlex/rails/sgml.rb:11:in `method_missing'
+  Rendering layout /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/application.html.erb
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/errors/default.html.erb within layouts/lookbook/application
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/errors/default.html.erb within layouts/lookbook/application (Duration: 118.3ms | GC: 10.3ms)
+  Rendered layout /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/application.html.erb (Duration: 118.5ms | GC: 10.3ms)
+Completed 500 Internal Server Error in 132ms (Views: 119.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 10.3ms)
+
+
+Started GET "/lookbook-assets/SourceCodeVariable-Roman.ttf.118e9f22.woff2" for 127.0.0.1 at 2026-02-12 22:13:38 -0300
+Started GET "/lookbook/inspect/onboarding/email_verification" for 127.0.0.1 at 2026-02-12 22:13:39 -0300
+Processing by Lookbook::InspectorController#show as */*
+  Parameters: {"path"=>"onboarding/email_verification"}
+Processing by ViewComponentsController#render_scenario_to_string as */*
+  Parameters: {"path"=>"onboarding/email_verification"}
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/view_component-4.3.0/app/views/view_components/preview.html.erb
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/view_component-4.3.0/app/views/view_components/preview.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+rescue_from handled ActionView::Template::Error (undefined method `unsafe_raw' for #<Components::Layout::Header:0x000000010a6c9890 @variant=:logo, @logo_url="https://bucket.mailersendapp.com/0r83ql3eyx4zw1jm/0p7kx4xem8g9yjre/images/9e767506-c199-4ad6-8b4a-c49a3f3ae02f.png", @logo_alt="Linkana", @logo_width=120, @logo_link="https://app.linkana.com", @user_initials=nil, @user_name=nil, @user_email=nil, @social_links=[], @bg_color="#ffffff", @content_bg_color="#ffffff", @_state=#<Phlex::SGML::State:0x000000010cee1698 @buffer="", @capturing=false, @user_context={:rails_view_context=>#<ActionView::Base:0x00000000010bd0>, :capture_context=>#<ActionView::Base:0x00000000010bd0>}, @fragments=nil, @fragment_depth=0, @cache_stack=[], @halt_signal=nil, @output_buffer="">>) - /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/phlex-rails-2.4.0/lib/phlex/rails/sgml.rb:11:in `method_missing'
+  Rendering layout /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/application.html.erb
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/errors/default.html.erb within layouts/lookbook/application
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/errors/default.html.erb within layouts/lookbook/application (Duration: 9.4ms | GC: 3.4ms)
+  Rendered layout /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/application.html.erb (Duration: 9.5ms | GC: 3.4ms)
+Completed 500 Internal Server Error in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.4ms)
+
+
+Started GET "/lookbook/inspect/onboarding/reset_password" for 127.0.0.1 at 2026-02-12 22:13:40 -0300
+Processing by Lookbook::InspectorController#show as */*
+  Parameters: {"path"=>"onboarding/reset_password"}
+Processing by ViewComponentsController#render_scenario_to_string as */*
+  Parameters: {"path"=>"onboarding/reset_password"}
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/view_component-4.3.0/app/views/view_components/preview.html.erb
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/view_component-4.3.0/app/views/view_components/preview.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+rescue_from handled ActionView::Template::Error (undefined method `unsafe_raw' for #<Components::Layout::Header:0x000000010d94a968 @variant=:logo, @logo_url="https://bucket.mailersendapp.com/0r83ql3eyx4zw1jm/0p7kx4xem8g9yjre/images/9e767506-c199-4ad6-8b4a-c49a3f3ae02f.png", @logo_alt="Linkana", @logo_width=120, @logo_link="https://app.linkana.com", @user_initials=nil, @user_name=nil, @user_email=nil, @social_links=[], @bg_color="#ffffff", @content_bg_color="#ffffff", @_state=#<Phlex::SGML::State:0x000000010cfa1f60 @buffer="", @capturing=false, @user_context={:rails_view_context=>#<ActionView::Base:0x00000000010c20>, :capture_context=>#<ActionView::Base:0x00000000010c20>}, @fragments=nil, @fragment_depth=0, @cache_stack=[], @halt_signal=nil, @output_buffer="">>) - /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/phlex-rails-2.4.0/lib/phlex/rails/sgml.rb:11:in `method_missing'
+  Rendering layout /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/application.html.erb
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/errors/default.html.erb within layouts/lookbook/application
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/errors/default.html.erb within layouts/lookbook/application (Duration: 11.8ms | GC: 1.5ms)
+  Rendered layout /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/application.html.erb (Duration: 12.1ms | GC: 1.5ms)
+Completed 500 Internal Server Error in 17ms (Views: 12.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.7ms)
+
+
+Started GET "/lookbook/inspect/onboarding/welcome_buyer" for 127.0.0.1 at 2026-02-12 22:13:40 -0300
+Processing by Lookbook::InspectorController#show as */*
+  Parameters: {"path"=>"onboarding/welcome_buyer"}
+Processing by ViewComponentsController#render_scenario_to_string as */*
+  Parameters: {"path"=>"onboarding/welcome_buyer"}
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/view_component-4.3.0/app/views/view_components/preview.html.erb
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/view_component-4.3.0/app/views/view_components/preview.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+rescue_from handled ActionView::Template::Error (undefined method `unsafe_raw' for #<Components::Layout::Header:0x000000010d70ca98 @variant=:logo, @logo_url="https://bucket.mailersendapp.com/0r83ql3eyx4zw1jm/0p7kx4xem8g9yjre/images/9e767506-c199-4ad6-8b4a-c49a3f3ae02f.png", @logo_alt="Linkana", @logo_width=120, @logo_link="https://app.linkana.com", @user_initials=nil, @user_name=nil, @user_email=nil, @social_links=[], @bg_color="#ffffff", @content_bg_color="#ffffff", @_state=#<Phlex::SGML::State:0x000000010d401e70 @buffer="", @capturing=false, @user_context={:rails_view_context=>#<ActionView::Base:0x00000000010c70>, :capture_context=>#<ActionView::Base:0x00000000010c70>}, @fragments=nil, @fragment_depth=0, @cache_stack=[], @halt_signal=nil, @output_buffer="">>) - /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/phlex-rails-2.4.0/lib/phlex/rails/sgml.rb:11:in `method_missing'
+  Rendering layout /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/application.html.erb
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/errors/default.html.erb within layouts/lookbook/application
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/errors/default.html.erb within layouts/lookbook/application (Duration: 36.6ms | GC: 29.6ms)
+  Rendered layout /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/application.html.erb (Duration: 37.0ms | GC: 29.6ms)
+Completed 500 Internal Server Error in 40ms (Views: 37.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 29.6ms)
+
+
+Started GET "/lookbook/inspect/onboarding/reset_password" for 127.0.0.1 at 2026-02-12 22:13:41 -0300
+Processing by Lookbook::InspectorController#show as */*
+  Parameters: {"path"=>"onboarding/reset_password"}
+Processing by ViewComponentsController#render_scenario_to_string as */*
+  Parameters: {"path"=>"onboarding/reset_password"}
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/view_component-4.3.0/app/views/view_components/preview.html.erb
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/view_component-4.3.0/app/views/view_components/preview.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+rescue_from handled ActionView::Template::Error (undefined method `unsafe_raw' for #<Components::Layout::Header:0x000000010d94bd68 @variant=:logo, @logo_url="https://bucket.mailersendapp.com/0r83ql3eyx4zw1jm/0p7kx4xem8g9yjre/images/9e767506-c199-4ad6-8b4a-c49a3f3ae02f.png", @logo_alt="Linkana", @logo_width=120, @logo_link="https://app.linkana.com", @user_initials=nil, @user_name=nil, @user_email=nil, @social_links=[], @bg_color="#ffffff", @content_bg_color="#ffffff", @_state=#<Phlex::SGML::State:0x000000010d489118 @buffer="", @capturing=false, @user_context={:rails_view_context=>#<ActionView::Base:0x00000000010cc0>, :capture_context=>#<ActionView::Base:0x00000000010cc0>}, @fragments=nil, @fragment_depth=0, @cache_stack=[], @halt_signal=nil, @output_buffer="">>) - /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/phlex-rails-2.4.0/lib/phlex/rails/sgml.rb:11:in `method_missing'
+  Rendering layout /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/application.html.erb
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/errors/default.html.erb within layouts/lookbook/application
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/errors/default.html.erb within layouts/lookbook/application (Duration: 7.6ms | GC: 0.7ms)
+  Rendered layout /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/application.html.erb (Duration: 7.7ms | GC: 0.7ms)
+Completed 500 Internal Server Error in 10ms (Views: 7.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/lookbook/inspect/onboarding/company_invitation" for 127.0.0.1 at 2026-02-12 22:13:41 -0300
+Processing by Lookbook::InspectorController#show as */*
+  Parameters: {"path"=>"onboarding/company_invitation"}
+Processing by ViewComponentsController#render_scenario_to_string as */*
+  Parameters: {"path"=>"onboarding/company_invitation"}
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/view_component-4.3.0/app/views/view_components/preview.html.erb
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/view_component-4.3.0/app/views/view_components/preview.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+rescue_from handled ActionView::Template::Error (undefined method `unsafe_raw' for #<Components::Layout::Header:0x000000010d643df0 @variant=:logo, @logo_url="https://bucket.mailersendapp.com/0r83ql3eyx4zw1jm/0p7kx4xem8g9yjre/images/9e767506-c199-4ad6-8b4a-c49a3f3ae02f.png", @logo_alt="Linkana", @logo_width=120, @logo_link="https://app.linkana.com", @user_initials=nil, @user_name=nil, @user_email=nil, @social_links=[], @bg_color="#ffffff", @content_bg_color="#ffffff", @_state=#<Phlex::SGML::State:0x000000010d363040 @buffer="", @capturing=false, @user_context={:rails_view_context=>#<ActionView::Base:0x00000000010d10>, :capture_context=>#<ActionView::Base:0x00000000010d10>}, @fragments=nil, @fragment_depth=0, @cache_stack=[], @halt_signal=nil, @output_buffer="">>) - /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/phlex-rails-2.4.0/lib/phlex/rails/sgml.rb:11:in `method_missing'
+  Rendering layout /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/application.html.erb
+  Rendering /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/errors/default.html.erb within layouts/lookbook/application
+  Rendered /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/lookbook/errors/default.html.erb within layouts/lookbook/application (Duration: 5.7ms | GC: 0.7ms)
+  Rendered layout /Users/leonardoventura/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/lookbook-2.3.14/app/views/layouts/lookbook/application.html.erb (Duration: 5.8ms | GC: 0.7ms)
+Completed 500 Internal Server Error in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PhlexMail'*/[0m
