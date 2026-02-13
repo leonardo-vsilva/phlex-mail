@@ -81,7 +81,7 @@ module Templates
                       td(class: "sm-px-6 sm-px-4", style: "padding: 16px 24px;") do
                         comment { " Title " }
                         h1(class: "xs-text-2xl", style: "margin: 0 0 12px 0; font-size: 24px; font-weight: 600; color: #111827; line-height: 1.2;") do
-                          plain "Seu código de acesso - Linkana"
+                          plain "Seu código de acesso"
                         end
 
                         comment { " Description " }

@@ -3,7 +3,7 @@ require Rails.root.join("app/components/ui/buttons/buttons.rb")
 module UiElements
   class ButtonPreview < ViewComponent::Preview
     # @label Primary Button
-    # @param text text "Button Text"
+    # @source ../../../../app/components/ui/buttons/buttons.rb
     def default(text: "Primary Action")
       render(Components::UiElements::Button.new(
         variant: :primary,

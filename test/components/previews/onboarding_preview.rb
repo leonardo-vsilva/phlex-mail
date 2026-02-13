@@ -7,6 +7,8 @@ require Rails.root.join("app/components/layout/footer/footer.rb")
 
 class OnboardingPreview < ViewComponent::Preview
   # @label Company Invitation
+  # @display wrapper true
+  # @display max_width 100px
   def company_invitation
     render(Templates::Onboarding::CompanyInvitation.new(
       logo_url: "https://bucket.mailersendapp.com/0r83ql3eyx4zw1jm/0p7kx4xem8g9yjre/images/9e767506-c199-4ad6-8b4a-c49a3f3ae02f.png",
