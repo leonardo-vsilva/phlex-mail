@@ -1,0 +1,46 @@
+<!--
+  OTP Code Box Component - HTML/CSS Implementation
+
+  Padrão para exibição otimizada de código OTP em emails.
+  Compatível com todos os clientes de email.
+
+  Variantes disponíveis:
+  - default: Somente código OTP
+  - with-label: Código OTP com label descritivo
+-->
+
+<!-- Wrapper para centralização -->
+<table style="width: 100%; background-color: #ffffff;" cellpadding="0" cellspacing="0" role="none">
+    <tr>
+        <td>&zwj;</td>
+        <td style="width: 600px; max-width: 100%;">
+            <table style="width: 100%;" cellpadding="0" cellspacing="0" role="none">
+                <tr>
+                    <td style="padding: 24px;">
+                        <!--[if mso]>
+                            <v:roundrect arcsize="0.5" style="width:100%; height:auto" fillcolor="#f3f4f6" stroke="true" strokecolor="#d7dadf" strokeweight="2px" xmlns:v="urn:schemas-microsoft-com:vml">
+                        <![endif]-->
+                        <table style="width: 100%; background-color: #f3f4f6; border: 2px dashed #d7dadf; border-radius: 6px; border-collapse: separate;" cellpadding="0" cellspacing="0" role="none">
+                            <!-- Label (opcional) -->
+                            <tr>
+                                <td style="padding: 24px 24px 0 24px; text-align: center; font-size: 14px; color: #4b5563; font-weight: 500; display: table-cell;">
+                                    CÓDIGO DE VERIFICAÇÃO
+                                </td>
+                            </tr>
+                            <!-- OTP Code -->
+                            <tr>
+                                <td style="padding: 16px 24px 16px 24px; text-align: center;">
+                                    <code style="display: block; font-size: 36px; font-weight: 700; color: #1f2937; letter-spacing: 6px; font-family: 'Courier New', monospace; line-height: 1.2;">123 456</code>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if mso]>
+                            </v:roundrect>
+                        <![endif]-->
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>&zwj;</td>
+    </tr>
+</table>

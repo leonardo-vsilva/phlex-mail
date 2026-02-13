@@ -1,0 +1,67 @@
+<!--
+  Container Component - HTML/CSS Implementation
+
+  Variantes disponíveis:
+  - flush: Container sem margens laterais em mobile (borda a borda)
+  - gutters: Container com margens laterais de 24px em mobile (padrão)
+
+  O container é responsivo e sempre tem 600px de largura em desktop,
+  com margens automáticas para centralizar o conteúdo.
+-->
+
+<!-- =================================================================== -->
+<!-- FLUSH ON MOBILE                                                     -->
+<!-- =================================================================== -->
+
+<!-- Container flush on mobile -->
+<table style="background-color: #f1f5f9; width: 100%;" cellpadding="0" cellspacing="0" role="none">
+  <tr>
+    <td>&zwj;</td>
+    <td style="background-color: #fffffe; width: 600px; max-width: 100%;">
+      <table style="width: 100%;" cellpadding="0" cellspacing="0" role="none">
+        <tr>
+          <td>
+            <div role="separator" style="line-height: 44px">&zwj;</div>
+            <p
+              style="margin: 0; text-align: center; font-size: 16px; line-height: 24px; font-weight: 500; color: #030712;">
+              Flush on mobile
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td>&zwj;</td>
+  </tr>
+</table>
+
+<!-- =================================================================== -->
+<!-- WITH GUTTERS ON MOBILE                                              -->
+<!-- =================================================================== -->
+
+<!-- Container with gutters on mobile (default) -->
+<style>
+  @media (max-width: 599px) {
+    .sm-w-6 {
+      width: 24px !important;
+    }
+  }
+</style>
+<table style="background-color: #f1f5f9; width: 100%;" cellpadding="0" cellspacing="0" role="none">
+  <tr>
+    <td class="sm-w-6">&zwj;</td>
+    <td style="background-color: #fffffe; width: 600px; max-width: 100%;">
+      <table style="width: 100%;" cellpadding="0" cellspacing="0" role="none">
+        <tr>
+          <td>
+            <div role="separator" style="line-height: 44px">&zwj;</div>
+            <p
+              style="margin: 0; text-align: center; font-size: 16px; line-height: 24px; font-weight: 500; color: #030712;">
+              With gutters on mobile
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td class="sm-w-6">&zwj;</td>
+  </tr>
+</table>
